@@ -18,7 +18,7 @@ for i in sentence:
 
 total = (lowercase + uppercase + punctuation)
 
-# Output the result
+# Output the re
 print("So get this, here's what you said:")
 print("Uppercase:", uppercase)
 print("Lower case:", lowercase)
