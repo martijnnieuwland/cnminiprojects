@@ -1,12 +1,11 @@
 text = input("Please select your text file: ")
 title = text.removeprefix("raw/").removesuffix(".txt")
-
-print(title)
+img = input("Please select your text image: ")
 
 with open(text, 'r') as fin:
     text = fin.read()
 
-with open("pages/index.html", "a") as pout:
+with open("index.md", "a") as pout:
     pout.write(f"""
 <!DOCTYPE html>
 <html>
@@ -17,6 +16,7 @@ with open("pages/index.html", "a") as pout:
 <h1>
     {title}
 </h1>
+<img src="{img}" width="500">
 <p>
     {text}
 </p>

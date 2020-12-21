@@ -1,6 +1,5 @@
 import random
 
-
 # take in a number 0 - 2 from the user that represents their hand
 
 userHand = int(input("What's your hand? 0=Rock, 1=Paper, 2=Scissors: "))
