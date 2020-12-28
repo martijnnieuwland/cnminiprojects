@@ -1,5 +1,9 @@
-# with open("cloudsurfer.txt", "w") as fout:
-#     fout.write("this is a test")
-#
-with open("cloudsurfer.txt", "a") as fout:
-    fout.write("Hiey")
+try:
+    class MyCustomException(Exception):
+        def __init__(self, value):
+            self.value = value
+
+    raise (MyCustomException(10))
+
+except MyCustomException as error:
+    print('A New Exception occurred:', error.value)
